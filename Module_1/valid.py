@@ -11,10 +11,7 @@ def valid_lang() -> str:
             return lang_choice
 
 
-while True:
-    lang = valid_lang()
-    if lang:
-        break
+lang = valid_lang()
 
 
 def valid_cipher() -> str:
@@ -39,10 +36,7 @@ def valid_cipher() -> str:
                 return cipher_choice
 
 
-while True:
-    choice = valid_cipher()
-    if choice:
-        break
+choice = valid_cipher()
 
 
 def valid_step() -> int:
@@ -65,10 +59,7 @@ def valid_step() -> int:
                 print("Enter a number, not a character: ")
 
 
-while True:
-    step = valid_step()
-    if step:
-        break
+steps = valid_step()
 
 
 def cipher_text() -> str:
@@ -92,7 +83,4 @@ def cipher_text() -> str:
             return text_input_decip
 
 
-while True:
-    text = cipher_text()
-    if text:
-        break
+text = cipher_text()
